@@ -33,8 +33,11 @@ public class Todo {
 
 		String[] XMLS=new String[listaFiles.size()];
 		
+		int counter=1;
 		int iterador = 0;
 		for (String linea2 : listaFiles) {	
+			System.out.println("Record "+counter+"..."+listaFiles.size());
+			counter++;
 			try {
 				URL url = new URL("http://catalog.hathitrust.org/Record/"+linea2+".xml");
 				HttpURLConnection conn = (HttpURLConnection) url.openConnection();

@@ -44,6 +44,7 @@ public class MainProcess {
 
 			
 			br.close();
+			System.out.println("FIN");
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally

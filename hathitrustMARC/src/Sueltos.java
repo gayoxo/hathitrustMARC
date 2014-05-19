@@ -11,7 +11,10 @@ import java.util.ArrayList;
 public class Sueltos {
 
 	public static void processLines(ArrayList<String> listaFiles, String folder) {
+		int counter=1;
 		for (String linea2 : listaFiles) {	
+			System.out.println("Record "+counter+"..."+listaFiles.size());
+			counter++;
 			try {
 				URL url = new URL("http://catalog.hathitrust.org/Record/"+linea2+".xml");
 				HttpURLConnection conn = (HttpURLConnection) url.openConnection();
